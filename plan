@@ -1,0 +1,32 @@
+organizations
+  id serial pkey
+  name
+
+templates
+  id NOTSERIAL pkey
+  name
+  organization
+
+structure_nodes
+  id NOTSERIAL pkey
+  organization
+  name
+  parent needed?
+
+template_nodes
+  id NOTSERIAL
+  name
+  info
+  template
+
+structure_closure
+  ancestor
+  descendant
+  depth
+  structure_id
+
+template_closure
+  ancestor
+  descendant
+  depth
+  template_id
